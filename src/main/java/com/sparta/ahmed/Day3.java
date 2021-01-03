@@ -13,16 +13,12 @@ public class Day3 {
         long rightFiveDownOne = countNumberOfTrees(treeGraphList, 5, 0);
         long rightSevenDownOne = countNumberOfTrees(treeGraphList, 7, 0);
         long rightOneDownTwo = countNumberOfTrees(treeGraphList, 1, 1);
-        System.out.println(rightOneDownOne);
-        System.out.println(rightThreeDownOne);
-        System.out.println(rightFiveDownOne);
-        System.out.println(rightSevenDownOne);
-        System.out.println(rightOneDownTwo);
+
         long sum = rightOneDownOne * rightFiveDownOne * rightOneDownTwo * rightSevenDownOne * rightThreeDownOne;
         System.out.println(sum);
     }
 
-
+    
     private static ArrayList<String> readFile() {
         File treeGraph = new File("src/main/resources/treegraph.txt");
         ArrayList<String> treeGraphList = new ArrayList<>();
